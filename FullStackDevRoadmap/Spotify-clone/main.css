@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+}
+
+.navigation-bar{
+    width:100%;
+    height: 60px;
+    background-color: grey;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+ul{
+    list-style-type: none;
+}
+.nav-left{
+    display: flex;
+    justify-content: center;
+}
+.nav-center{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.nav-right{
+    display: flex;
+    justify-content: center;
+}
+
+ul#navigation-bar li.options {
+    list-style-image: url('images/puntos.png');
+    }
