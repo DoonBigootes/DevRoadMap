@@ -16,25 +16,35 @@
     <nav>
       <div class="align-left">
         <div class="logo">
-          <a href="">Logo</a>
+          <a href="">
+            <img src="images/sputify-logo.png" alt="logo" style="width: 30px; height: 30px;">
+          </a>
         </div>
       </div>
       <div class="align-center">
-        <a href="">Home</a>
+        <a href="" class="icon-btn" data-alt="Home">
+          <img src="images/home-icon.svg" alt="Home icon" class="icon">
+        </a>
         <div class="search-bar">
-          <button type="submit" class=".icon-btn">
+          <button type="button" class="icon-btn" data-alt="Search">
             <img src="images/search-icon.png" alt="Search icon" class="icon">
           </button>
-          <input type="text" placeholder="Wath do you want to play?">
-          <a href="" class=".icon-btn">
+          <input type="text" placeholder="What do you want to play?">
+          <a href="" class="icon-btn" data-alt="Browse">
             <img src="images/browse-icon.png" alt="Browse icon" class="icon">
           </a>
         </div>
       </div>
       <div class="align-right">
-        <a href="">Install App</a>
-        <a href="">Whats new</a>
-        <a href="">Profile</a>
+        <a href="" class="icon-btn" data-alt="Install App :D">
+          <img src="images/install-icon.svg" alt="Install icon" class="icon">
+        </a>
+        <a href="" class="icon-btn" data-alt="Whats new">
+          <img src="images/bell-icon.svg" alt="Whats new icon" class="icon">
+        </a>
+        <a href="" class="icon-btn" data-alt="Profile">
+          <img src="images/profile-icon.svg" alt="Profile icon" class="icon">
+        </a>
       </div>
     </nav>
   </header>
@@ -42,7 +52,9 @@
     <aside class="sidebar-playlist">
       <div class="sidebar-playlist-header">
         <h3 class="title">Our Library</h3>
-        <button>Create Playlist</button>
+        <button type="button" class="icon-btn" data-alt="Creat new playlist">
+          <img src="images/add-icon.svg" alt="add new playlist icon" class="icon">
+        </button>
       </div>
       <ul class="playlist-list">
         <li class="playlist-item">
@@ -77,20 +89,36 @@
         </li>
       </ul>
     </aside>
+
     <div class="player">
-<aside class="player-menu align-center">
-      <div class="player-controls">
-        <button id="prev-btn">⏮</button>
-        <button id="play-pause-btn">▶</button>
-        <button id="next-btn">⏭</button>
-      </div>     
-    </aside>
-      <aside class="player-menu-side-options align-right">
+      <aside class="player-menu">
+        <div class="player-controls">
+          <button id="prev-btn" type="button" class="icon-btn">
+            <img src="images/back-icon.svg" alt="back icon" class="icon"
+            style="width: 40px; height: 40px;">
+          </button>
+          <button id="play-pause-btn" type="button" class="icon-btn">
+            <img src="images/play-icon.svg" alt="back icon" class="icon"
+            style="width: 40px; height: 40px;">
+          </button>
+          <button id="next-btn" type="button" class="icon-btn">
+            <img src="images/skip-icon.svg" alt="back icon" class="icon"
+            style="width: 45px; height: 45px;">
+          </button>
+        </div>
+        <div class="player-bar">
+          <!-- poner aqui la duracion -->
+        </div>     
+      </aside>
+      <aside class="player-menu-side-options">
         <div class="align-right">
-          <button id="queue-song" type="button">queue</button>
-          <button id="select-device" type="button">device</button>
+          <button type="button" class="icon-btn" data-alt="Select Device">
+            <img src="images/device-icon.svg" alt="select device icon" class="icon">
+          </button>
           <div class="volume-slider-container">
-            <label for="volume-slider">Volume:</label>
+            <a for="volume-slider" class="icon-btn" data-alt="Volume">
+              <img src="images/volume-icon.svg" alt="volume icon" class="icon">
+            </a>
             <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="0.5">
             </audio>
           </div>
