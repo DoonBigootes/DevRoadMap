@@ -4,41 +4,265 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 header{
     display: flex;
 }
 
-.navigation-bar{
+nav{
     width:100%;
-    height: 60px;
-    background-color: grey;
+    height: 6%;
+    background-color: #121212;
     color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
+    padding: 0px 25px;
     position: fixed;
     top: 0;
     z-index: 1;
 
 }
-ul{
-    list-style-type: none;
-}
-.nav-left{
+
+.align-left{
     display: flex;
-    justify-content: center;
-}
-.nav-center{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-}
-.nav-right{
-    display: flex;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
 }
 
-ul#navigation-bar li.options {
-    list-style-image: url('images/puntos.png');
-    }
+.align-center{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    gap: 2.5%;
+}
+
+.align-right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.sidebar-playlist{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 18%;
+    height: 100%;
+    background-color: #212121;
+    color: white;
+    padding-top: 60px;
+}
+
+.sidebar-playlist-header{
+    display: flex;
+}
+
+.playlist-item {
+    display: flex;
+    list-style: none;
+    border-radius: 5px;
+    width: 90%;
+    height: 70px;
+    padding: 10px;    
+}
+  .playlist-item:hover {
+    background-color: #535353; 
+    transform: scale(1.1);
+}
+
+.playlist-link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.playlist-link p{
+    padding-left: 10px;
+}
+
+.playlist-img{
+    height: 55px;
+    width: auto;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+
+
+.sidebar-playlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 0 20px;
+}
+
+.playlist-list{
+    color: white;
+    display: flex;
+    flex-direction: column;    
+    margin: 10px;
+    padding: 5px 10px;
+}
+.player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.player-menu{
+    width:100%;
+    height: 10%;
+    color: #fff;
+    padding: 0px 25px;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    background-color: #121212;
+}
+.player-menu-side-options{
+    width:20%;
+    height: 10%;
+    color: #fff;
+    padding: 0px 35px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
+    background-color: #212121;
+}
+.main-player{
+    padding: 0 0 0 30%;
+}
+
+.volume-slider-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #volume-slider {
+    width: 150px;
+  }
+
+#main-body{
+    margin-top: 6%;
+    margin-left: 18%;
+    margin-bottom: 10%;
+    padding: 20px;
+    background-color: #181818;
+    color: white;
+    height: calc(100vh - 16%);
+    overflow: auto;
+}
+
+.section{
+    margin-bottom: 40px;
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5% 0 0 0;
+}
+
+.section-header h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.playlist-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.playlist{
+    height: 180px;
+    background-color: #282828;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.playlist p{
+    padding-top: 10px;
+}
+
+.playlist:hover{
+    transform: scale(1.075);
+    background-color: #535353;
+}
+
+.title {
+    color: rgb(196, 189, 189);
+    transition: color 0.8 ease;
+}
+.title:hover{
+    color:white;
+}
+
+.playlist img{
+    height: 80%;
+    border-radius: 5px;
+}
+
+a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.section-header a:hover {
+    text-decoration: underline; 
+}
+
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border-radius: 25%;
+    background-color: #282828;
+    gap: 10px;
+}
+
+
+
+.icon-btn {
+    background-color: #282828;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+.search-bar input{
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex: 1;   
+    padding: 5px;
+    border-radius: 15px;    
+    color: white;
+    font-size: 16px;
+}
+
+.icon {
+    height: 20px; 
+    width: 20px;
+    filter: invert(100%); 
+  }
+
+
+
